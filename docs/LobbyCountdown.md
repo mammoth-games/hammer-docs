@@ -1,3 +1,0 @@
-# KillBrickComponent
-
-    Documentation Not Found
