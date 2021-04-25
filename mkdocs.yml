@@ -1,22 +1,36 @@
 site_name: Hammer Game
 nav:
     - Home: index.md
-    - 'Services':
-        - 'ServicesExample': 'services.md'
-    - 'Controllers':
-        - 'ControllerExample': 'controllers.md'
-    - 'Modules':
-        - 'ModulesExample': 'modules.md'
-    - 'Components':
-        - 'BubbleComponent': 'BubbleComponent.md'
-        - 'HillComponent': 'HillComponent.md'
-        - 'KillBrickComponent': 'KillBrickComponent.md'
-        - 'LeaderboardComponent': 'LeaderboardComponent.md'
-        - 'RagdollBrickComponent': 'RagdollBrickComponent.md'
-        - 'RagdollComponent': 'RagdollComponent.md'
-        - 'UnragdollBrickComponent': 'UnragdollBrickComponent.md'
-    - 'GameModes':
-        - 'GameModesExample': 'gamemodes.md'
+    - 'ServerStorage':
+        - 'Services':
+            - 'ServicesExample': 'services.md'
+        - 'Modules':
+            - 'ClientCast': 'ClientCast.md'
+            - 'DataStore2': 'DataStore2.md'
+            - 'ProfileService': 'ProfileService.md'
+            - 'TimeUtils': 'TimeUtils.md'
+        - 'Components':
+            - 'BubbleComponent': 'BubbleComponent.md'
+            - 'HillComponent': 'HillComponent.md'
+            - 'KillBrickComponent': 'KillBrickComponent.md'
+            - 'LeaderboardComponent': 'LeaderboardComponent.md'
+            - 'RagdollBrickComponent': 'RagdollBrickComponent.md'
+            - 'RagdollComponent':
+              - 'RagdollComponent': 'RagdollComponent.md'
+              - 'BuildConstraintsRig': 'BuildConstraintsRig.md'
+              - 'RagdollConstants': 'RagdollConstants.md'
+            - 'UnragdollBrickComponent': 'UnragdollBrickComponent.md'
+    - 'ReplicatedStorage':
+        - 'Knit':
+            - 'Components':
+                - 'LobbyCountdown': 'LobbyCountdown.md'
+            - 'Controllers':
+                - 'ControllerExample': 'blank.md'
+            - 'Modules':
+                - 'ModulesExample': 'blank.md'
+            - 'Util':
+                - 'UtilExample': 'blank.md'
+
 repo_url: https://github.com/mammoth-games/hammer
 extra_css:
   - stylesheets/extra.css
