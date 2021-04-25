@@ -3,7 +3,7 @@
 ## Developers
 * AstroCode
 * matasmathew
-* seakat
+* Seakat MC. Kitten Face
 * Tomgie
 * WohoNavy
 * Zeloi
