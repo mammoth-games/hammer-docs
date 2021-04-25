@@ -1,8 +1,22 @@
 site_name: Hammer Game
 nav:
     - Home: index.md
-    - Services: services.md
-    - Controllers: controllers.md
+    - 'Services':
+        - 'ServicesExample': 'services.md'
+    - 'Controllers':
+        - 'ControllerExample': 'controllers.md'
+    - 'Modules':
+        - 'ModulesExample': 'modules.md'
+    - 'Components':
+        - 'BubbleComponent': 'BubbleComponent.md'
+        - 'HillComponent': 'HillComponent.md'
+        - 'KillBrickComponent': 'KillBrickComponent.md'
+        - 'LeaderboardComponent': 'LeaderboardComponent.md'
+        - 'RagdollBrickComponent': 'RagdollBrickComponent.md'
+        - 'RagdollComponent': 'RagdollComponent.md'
+        - 'UnragdollBrickComponent': 'UnragdollBrickComponent.md'
+    - 'GameModes':
+        - 'GameModesExample': 'gamemodes.md'
 repo_url: https://github.com/mammoth-games/hammer
 extra_css:
   - stylesheets/extra.css
