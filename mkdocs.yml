@@ -1,0 +1,26 @@
+site_name: Hammer Game
+nav:
+    - Home: index.md
+    - About: about.md
+repo_url: https://github.com/rojo-rbx/rojo.space/
+extra_css:
+  - stylesheets/extra.css
+theme:
+  name: material
+  favicon: img/hammer_small.png
+  logo: img/hammer_small.png
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      primary: red
+      accent: pink
+      scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      primary: red
+      accent: pink
+      scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
