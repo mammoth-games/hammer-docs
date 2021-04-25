@@ -1,8 +1,9 @@
 site_name: Hammer Game
 nav:
     - Home: index.md
-    - About: about.md
-repo_url: https://github.com/rojo-rbx/rojo.space/
+    - Services: services.md
+    - Controllers: controllers.md
+repo_url: https://github.com/mammoth-games/hammer
 extra_css:
   - stylesheets/extra.css
 theme:

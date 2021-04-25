@@ -7,6 +7,3 @@
 * Tomgie
 * WohoNavy
 * Zeloi
-
-## Piss
-shit
