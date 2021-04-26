@@ -1,5 +1,11 @@
 # RaycastHitbox
 
+### Description
+
+    Description Not Found
+
+### API
+
 	A point caster must be named "$Caster.Point".
 	A segment caster must have two attachments named
 	"$Caster.Segment.UniqueName.0"  <-- this one is the origin of the raycast

@@ -377,9 +377,46 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          ProfileService
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         ProfileService
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    Description
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#api" class="md-nav__link">
+    API
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -884,6 +921,28 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    Description
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#api" class="md-nav__link">
+    API
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -900,9 +959,10 @@
                 
                 
                 <h1 id="playercharacterservice">PlayerCharacterService</h1>
-<pre><code>Makes player data accessible for other scripts
-
-Ex.
+<h3 id="description">Description</h3>
+<p>Makes player data accessible for other scripts</p>
+<h3 id="api">API</h3>
+<pre><code>Ex.
 local profile = ProfileService:GetProfile(userid)
 profile:AddCurrency("Gold", 5)
 profile:GetCurrencyOfType("Gold")

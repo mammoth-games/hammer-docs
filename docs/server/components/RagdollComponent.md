@@ -1,6 +1,12 @@
 # RagdollComponent
 
 ## RagdollComponent
+
+### Description
+
+	Description Not Found
+
+### API
 	Ragdoll Component
 	by Astro and Tomgie
 
@@ -12,6 +18,12 @@
 
 ## RagdollConstants
 
+### Description
+
+    Description Not Found
+
+### API
+
 	This is a collection of constants that describe the ragdoll.
 
 	JOINT_PROPERTIES: The properties of each joint in the ragdoll.
@@ -22,6 +34,12 @@
 	PART_TO_JOINT_MAP: A map between the names of the parts and the names of their respective joints.
 
 ## BuildConstraintsRig
+
+### Description
+
+    Description Not Found
+
+### API
 
 	This module builds the ragdoll. It returns a dictionary of joints and a dictionary of
 	NoCollisionConstraints. The joint dictionary is structured like this:
