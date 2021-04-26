@@ -1,3 +1,3 @@
 # LobbyService
 
-    Documentation Not Found
+	For manipulating the lobby.
