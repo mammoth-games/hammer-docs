@@ -2,8 +2,8 @@
 
 ### Description
 
-	Create timers that count down from a specified time or stopwatches that count up from 0.
-	Timers use Signals to be able to fire functions when they complete.
+Create timers that count down from a specified time or stopwatches that count up from 0.
+Timers use Signals to be able to fire functions when they complete.
 	
 	Ex.
 	local timer = ClockService:newTimer(10)
@@ -17,7 +17,7 @@
 	ClockService:newStopwatch(name: string?)
 	ClockService:GetTimer(name: string)
 	ClockService:GetStopwatch(name: string)
-	
+	k
 	Timer:GetTime()
 	Timer:Destroy()
 	

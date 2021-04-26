@@ -2,7 +2,7 @@
 
 ### Description
 
-	Runs an infinite gameloop.
+Runs an infinite gameloop.
 
 ### API
 
