@@ -3,7 +3,21 @@ nav:
     - Home: index.md
     - Server:
         - Services:
-            - Example: server/services/example.md
+            - Characters: 
+                - DeathService: server/services/characters/DeathService.md
+                - RagdollService: server/services/characters/RagdollService.md
+            - Data:
+                - PlayerCharacterService: server/services/data/PlayerCharacterService.md
+                - ProfileService: server/services/data/ProfileService.md
+            - Gameplay:
+                - GameLoopService: server/services/gameplay/GameLoopService.md
+                - LobbyService: server/services/gameplay/LobbyService.md
+                - MapService: server/services/gameplay/MapService.md
+            - General:
+                - ClockService: server/services/general/ClockService.md
+            - Hammers:
+                - HammerService: server/services/hammers/HammerService.md
+                - HitService: server/services/hammers/HitService.md
         - Modules: server/modules.md
         - Components:
             - BubbleComponent: server/components/BubbleComponent.md
@@ -14,6 +28,7 @@ nav:
             - RagdollComponent: server/components/RagdollComponent.md
             - UnragdollBrickComponent: server/components/UnragdollBrickComponent.md
         - Game Modes: server/gamemodes.md
+        - ServerRuntime: server/services/example.md
     - Client:
         - Controllers:
             - Example: client/controllers/example.md
