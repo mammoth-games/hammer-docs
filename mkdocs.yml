@@ -60,3 +60,10 @@ theme:
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode
+
+markdown_extensions:
+    - pymdownx.highlight:
+        linenums_style: pymdownx.inline
+    - pymdownx.superfences
+    - pymdownx.inlinehilite
+    - pymdownx.keys

@@ -7,10 +7,12 @@ Makes player data accessible for other scripts
 ### API
 
 
-	Ex.
-	local profile = ProfileService:GetProfile(userid)
-	profile:AddCurrency("Gold", 5)
-	profile:GetCurrencyOfType("Gold")
+Ex.
+```lua
+local profile = ProfileService:GetProfile(userid)
+profile:AddCurrency("Gold", 5)
+profile:GetCurrencyOfType("Gold")
+```
 
 	API:
 	ProfileService:GetProfile(userId: number)
