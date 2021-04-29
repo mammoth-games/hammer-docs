@@ -28,7 +28,7 @@ nav:
             - RagdollComponent: server/components/RagdollComponent.md
             - UnragdollBrickComponent: server/components/UnragdollBrickComponent.md
         - Game Modes: server/gamemodes.md
-        - ServerRuntime: server/services/example.md
+#        - ServerRuntime: server/services/example.md
     - Client:
         - Controllers:
             - Example: client/controllers/example.md
@@ -36,6 +36,31 @@ nav:
             - RaycastHitbox: client/modules/RaycastHitbox.md
         - Components:
             - LobbyCountdownComponent: client/components/LobbyCountdownComponent.md
+    - Knit:
+        - Components:
+            - LobbyCountdown: knit/components/LobbyCountdown.md
+        - Controllers:
+            - Characters:
+                - CharacterController: knit/controllers/character/CharacterController.md
+                - RagdollController: knit/controllers/character/RagdollController.md
+            - Hammer:
+                - HammerController: knit/controllers/hammer/HammerController.md
+                - HitController: knit/controllers/hammer/HitController.md
+            - UI:
+                - KingIndicatorController: knit/controllers/ui/KingIndicatorController.md
+                - ProgressBarController: knit/controllers/ui/ProgressBarController.md
+                - UserInterfaceController: knit/controllers/ui/UserInterfaceController.md
+            - AudioController: knit/controllers/AudioController.md
+            - CameraController: knit/controllers/CameraController.md
+            - CrownController: knit/controllers/CrownController.md
+            - GameLoopController: knit/controllers/GameLoopController.md
+            - InputService: knit/controllers/InputService.md
+            - OnRuntimeController: knit/controllers/OnRuntimeController.md
+            - TimerWallController: knit/controllers/TimerWallController.md
+        - Version: knit/Version.md
+        - Constants: knit/Constants.md
+        - KnitClient: knit/KnitClient.md
+        - KnitServer: knit/KnitServer.md
     - Utils: utils.md
 
 repo_url: https://github.com/mammoth-games/hammer
