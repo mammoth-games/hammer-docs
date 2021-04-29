@@ -1341,10 +1341,29 @@
                 
                 <h1 id="charactercontroller">CharacterController</h1>
 <h3 id="description">Description</h3>
-<div class="highlight"><pre><span></span><code>Description Not Found
+<div class="highlight"><pre><span></span><code>CharacterController
+
+Provides character-related fields and signals for client code.
 </code></pre></div>
 <h3 id="api">API</h3>
-<div class="highlight"><pre><span></span><code>Documentation Not Found
+<div class="highlight"><pre><span></span><code>Fields:
+.Character
+    The player&#39;s character
+.Humanoid
+    The player&#39;s Humanoid
+.IsLoaded
+    Set to true before CharacterLoaded fires. Set to false on cleanup.
+.RootPart
+
+Signals:
+.CharacterAdded
+    Fires immediately when the character is added.
+.CharacterLoaded
+    Fires after calling WaitForChild on Humanoid, HumanoidRootPart, and Head.
+
+Methods:
+:CreateDeathJanitor()
+    Returns a janitor that will be cleaned up when the character dies.
 </code></pre></div>
                 
               
