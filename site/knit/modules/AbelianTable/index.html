@@ -1618,7 +1618,10 @@
 </table>
 <p>The key benefit to this module is that two nodes are connected by the same value regardless of retrieval order. That is, <code>data[a][b] == data[b][a]</code>.
 If you choose for the nodes to not be self-connected, then the diagonal will be empty.</p>
-<p><strong>NOTE:</strong> Attempting to set a value between two connected nodes to nil will revert to the userdata SelfConnectedList.None. This is because setting the value to nil would lose the connection.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Attempting to set a value between two connected nodes to nil will revert to the userdata <code>SelfConnectedList.None</code>. This is because setting the value to nil would lose the connection.</p>
+</div>
 <h3 id="api">API</h3>
 <div class="highlight"><pre><span></span><code>.new(nodes, defaultValue, connectToSelf)
 :Add(node, value)

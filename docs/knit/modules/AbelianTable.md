@@ -19,11 +19,11 @@ For example, consider the nodes {a, b, c, d, e} with "x" being the connected val
 **D**| X | X | X | X |
 **E**| X | X | X | X | X |
 
-
 The key benefit to this module is that two nodes are connected by the same value regardless of retrieval order. That is, `data[a][b] == data[b][a]`.
 If you choose for the nodes to not be self-connected, then the diagonal will be empty.
 
-**NOTE:** Attempting to set a value between two connected nodes to nil will revert to the userdata SelfConnectedList.None. This is because setting the value to nil would lose the connection.
+!!! note
+    Attempting to set a value between two connected nodes to nil will revert to the userdata `SelfConnectedList.None`. This is because setting the value to nil would lose the connection.
 
 
 ### API
