@@ -6,4 +6,10 @@
 
 ### API
 
-    Documentation Not Found
+	Knit.CreateController(controller): Controller
+	Knit.AddControllers(folder): Controller[]
+	Knit.AddControllersDeep(folder): Controller[]
+	Knit.GetService(serviceName): Service
+	Knit.GetController(controllerName): Controller
+	Knit.Start(): Promise<void>
+	Knit.OnStart(): Promise<void>
