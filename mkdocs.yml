@@ -62,7 +62,7 @@ nav:
             - Enumerator: knit/modules/Enumerator.md
             - NumberSpinner: knit/modules/NumberSpinner.md
             - RaycastHitbox: knit/modules/RaycastHitbox.md
-            - SelfConnectedList: knit/modules/SelfConnectedList.md
+            - AbelianTable: knit/modules/AbelianTable.md
             - Spring: knit/modules/Spring.md
             - gizmo: knit/modules/gizmo.md
             - t: knit/modules/t.md

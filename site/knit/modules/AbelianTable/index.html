@@ -14,7 +14,7 @@
     
     
       
-        <title>SelfConnectedList - Hammer Game</title>
+        <title>AbelianTable - Hammer Game</title>
       
     
     
@@ -65,7 +65,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#selfconnectedlist" class="md-skip">
+        <a href="#abeliantable" class="md-skip">
           Skip to content
         </a>
       
@@ -94,7 +94,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              SelfConnectedList
+              AbelianTable
             
           </span>
         </div>
@@ -1249,12 +1249,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          SelfConnectedList
+          AbelianTable
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        SelfConnectedList
+        AbelianTable
       </a>
       
         
@@ -1282,6 +1282,54 @@
   <a href="#api" class="md-nav__link">
     API
   </a>
+  
+    <nav class="md-nav" aria-label="API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#newnodes-any-defaultvalue-any-connecttoself-boolean" class="md-nav__link">
+    .new(nodes: {any}, defaultValue: any, connectToSelf: boolean?)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addnode-value" class="md-nav__link">
+    :Add(node, value)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removenode" class="md-nav__link">
+    :Remove(node)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setnode0-node1-value" class="md-nav__link">
+    :Set(node0, node1, value)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getnode0-node1" class="md-nav__link">
+    :Get(node0, node1)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setallvalue" class="md-nav__link">
+    :SetAll(value)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1441,6 +1489,54 @@
     API
   </a>
   
+    <nav class="md-nav" aria-label="API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#newnodes-any-defaultvalue-any-connecttoself-boolean" class="md-nav__link">
+    .new(nodes: {any}, defaultValue: any, connectToSelf: boolean?)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addnode-value" class="md-nav__link">
+    :Add(node, value)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removenode" class="md-nav__link">
+    :Remove(node)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setnode0-node1-value" class="md-nav__link">
+    :Set(node0, node1, value)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getnode0-node1" class="md-nav__link">
+    :Get(node0, node1)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setallvalue" class="md-nav__link">
+    :SetAll(value)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -1455,39 +1551,69 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/mammoth-games/hammer/edit/master/docs/knit/modules/SelfConnectedList.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/mammoth-games/hammer/edit/master/docs/knit/modules/AbelianTable.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                <h1 id="selfconnectedlist">SelfConnectedList</h1>
+                <h1 id="abeliantable">AbelianTable</h1>
 <h3 id="description">Description</h3>
-<div class="highlight"><pre><span></span><code>SelfConnectedList
+<p><strong>AbelianTable
 Ethan Curtiss (AstroCode)
-29 April 2021
-
-Wraps a 2D dictionary such that each node is connected to every other node (and optionally
-itself) by a value -- and without repeats.
-
-For example, consider the nodes {a, b, c, d, e} with &quot;x&quot; being the connected values.
- |a|b|c|d|e|
-------------
-a|x| | | | |
-------------
-b|x|x| | | |
-------------
-c|x|x|x| | |
-------------
-d|x|x|x|x| |
-------------
-e|x|x|x|x|x|
-The key benefit to this module is that two nodes are connected by the same value regardless
-of retrieval order. That is, data[a][b] == data[b][a]. If you choose for the nodes to not be
-self-connected, then the diagonal will be empty.
-
-NOTE: Attempting to set a value between two connected nodes to nil will revert to the userdata
-SelfConnectedList.None. This is because setting the value to nil would lose the connection.
-</code></pre></div>
+29 April 2021</strong></p>
+<p>Wraps a 2D dictionary such that each node is connected to every other node (and optionally itself) by a value -- and without repeats.</p>
+<p>For example, consider the nodes {a, b, c, d, e} with "x" being the connected values.</p>
+<table>
+<thead>
+<tr>
+<th>A</th>
+<th>B</th>
+<th>C</th>
+<th>D</th>
+<th>E</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+</tbody>
+</table>
+<p>The key benefit to this module is that two nodes are connected by the same value regardless of retrieval order. That is, <code>data[a][b] == data[b][a]</code>.
+If you choose for the nodes to not be self-connected, then the diagonal will be empty.</p>
+<p><strong>NOTE:</strong> Attempting to set a value between two connected nodes to nil will revert to the userdata SelfConnectedList.None. This is because setting the value to nil would lose the connection.</p>
 <h3 id="api">API</h3>
 <div class="highlight"><pre><span></span><code>.new(nodes, defaultValue, connectToSelf)
 :Add(node, value)
@@ -1495,42 +1621,27 @@ SelfConnectedList.None. This is because setting the value to nil would lose the 
 :Set(node0, node1, value)
 :Get(node0, node1, value)
 :SetAll(value)
-
-
-.new(nodes: {any}, defaultValue: any, connectToSelf: boolean?)
-    `nodes` is an array of nodes to connect. Passing duplicate or nil nodes will give unexpected
-        results.
-    `defaultValue` is what all of the values are initially set to. This defaults to
-        SelfConnectedList.None.
-    `connectToSelf` is if nodes should be connected to themselves. This defaults to true.
-    Complexity: O(n^2)
-
-
-:Add(node, value)
-    Adds a node and connects it to the rest. The new node connects to itself if the original
-    data structure had connectToSelf = true.
-    Complexity: O(n)
-
-
-:Remove(node)
-    Removes the node.
-    Complexity: O(n)
-
-
-:Set(node0, node1, value)
-    Sets the connected value of node0 and node1. The order of the arguments does not matter.
-    Complexity: O(1)
-
-
-:Get(node0, node1)
-    Gets the connected value of node0 and node1. The order of the arguments does not matter.
-    Complexity: O(1)
-
-
-:SetAll(value)
-    Set every value to `value`.
-    Complexity: O(n^2)
 </code></pre></div>
+<h4 id="newnodes-any-defaultvalue-any-connecttoself-boolean">.new(nodes: {any}, defaultValue: any, connectToSelf: boolean?)</h4>
+<p><code>nodes</code> is an array of nodes to connect. Passing duplicate or nil nodes will give unexpected results.</p>
+<p><code>defaultValue</code> is what all of the values are initially set to. This defaults to <code>SelfConnectedList.None</code>.</p>
+<p><code>connectToSelf</code> is if nodes should be connected to themselves. This defaults to true.</p>
+<p>Complexity: O(n^2)</p>
+<h4 id="addnode-value">:Add(node, value)</h4>
+<p>Adds a node and connects it to the rest. The new node connects to itself if the original data structure had connectToSelf = true.</p>
+<p>Complexity: O(n)</p>
+<h4 id="removenode">:Remove(node)</h4>
+<p>Removes the node.</p>
+<p>Complexity: O(n)</p>
+<h4 id="setnode0-node1-value">:Set(node0, node1, value)</h4>
+<p>Sets the connected value of node0 and node1. The order of the arguments does not matter.</p>
+<p>Complexity: O(1)</p>
+<h4 id="getnode0-node1">:Get(node0, node1)</h4>
+<p>Gets the connected value of node0 and node1. The order of the arguments does not matter.</p>
+<p>Complexity: O(1)</p>
+<h4 id="setallvalue">:SetAll(value)</h4>
+<p>Set every value to <code>value</code>.</p>
+<p>Complexity: O(n^2)</p>
                 
               
               
