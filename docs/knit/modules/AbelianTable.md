@@ -11,13 +11,13 @@ Wraps a 2D dictionary such that each node is connected to every other node (and 
 
 For example, consider the nodes {a, b, c, d, e} with "x" being the connected values.
 
-A | B | C | D | E | 
---|-- |-- | -- | -- |
-X |
-X | X |
-X | X | X |
-X | X | X | X |
-X | X | X | X | X |
+⠀|A | B | C | D | E | 
+-|- |- | - | - | - |
+**A**| X |
+**B**| X | X |
+**C**| X | X | X |
+**D**| X | X | X | X |
+**E**| X | X | X | X | X |
 
 
 The key benefit to this module is that two nodes are connected by the same value regardless of retrieval order. That is, `data[a][b] == data[b][a]`.
