@@ -57,6 +57,15 @@ nav:
             - InputService: knit/controllers/InputService.md
             - OnRuntimeController: knit/controllers/OnRuntimeController.md
             - TimerWallController: knit/controllers/TimerWallController.md
+        - Modules:
+            - GuiLib: knit/modules/GuiLib.md
+            - Enumerator: knit/modules/Enumerator.md
+            - NumberSpinner: knit/modules/NumberSpinner.md
+            - RaycastHitbox: knit/modules/RaycastHitbox.md
+            - SelfConnectedList: knit/modules/SelfConnectedList.md
+            - Spring: knit/modules/Spring.md
+            - gizmo: knit/modules/gizmo.md
+            - t: knit/modules/t.md
         - Version: knit/Version.md
         - Constants: knit/Constants.md
         - KnitClient: knit/KnitClient.md
