@@ -4,9 +4,8 @@
 
 ### Description
 
-**AbelianTable
-Ethan Curtiss (AstroCode)
-29 April 2021**
+**Ethan Curtiss (AstroCode)**
+**29 April 2021**
 
 Wraps a 2D dictionary such that each node is connected to every other node (and optionally itself) by a value -- and without repeats.
 
@@ -26,7 +25,6 @@ If you choose for the nodes to not be self-connected, then the diagonal will be 
 
 **NOTE:** Attempting to set a value between two connected nodes to nil will revert to the userdata SelfConnectedList.None. This is because setting the value to nil would lose the connection.
 
-  
 
 ### API
 
@@ -37,8 +35,6 @@ If you choose for the nodes to not be self-connected, then the diagonal will be 
 	:Get(node0, node1, value)
 	:SetAll(value)
 
-  
-  
 
 #### .new(nodes: {any}, defaultValue: any, connectToSelf: boolean?)
 
