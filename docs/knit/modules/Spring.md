@@ -2,8 +2,7 @@
 
 ## Description
 
-	A physical model of a spring, useful in many applications. Properties only evaluate
-	upon index making this model good for lazy applications
+A physical model of a spring, useful in many applications. Properties only evaluate upon index making this model good for lazy applications
 
 ## API
 

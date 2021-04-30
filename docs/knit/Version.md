@@ -2,5 +2,5 @@
 
 ## Description
 
-    The current version of the knit framework.
+The current version of the knit framework.
 
