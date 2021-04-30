@@ -1136,6 +1136,88 @@
     API
   </a>
   
+    <nav class="md-nav" aria-label="API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#followpathpath-vector3" class="md-nav__link">
+    :FollowPath(path: {Vector3})
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getcameracframe" class="md-nav__link">
+    :GetCameraCFrame()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lookatfrom-vector3-to-vector3" class="md-nav__link">
+    :LookAt(from: Vector3, to: Vector3?)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setcameramodecameramode-cameramodeenum" class="md-nav__link">
+    :SetCameraMode(cameraMode: CameraModeEnum)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setcameraoffsetcameraoffset-vector3" class="md-nav__link">
+    :SetCameraOffset(cameraOffset: Vector3)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cameramodule-changes" class="md-nav__link">
+    CameraModule changes:
+  </a>
+  
+    <nav class="md-nav" aria-label="CameraModule changes:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cameraui" class="md-nav__link">
+    CameraUI:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#classiccamera" class="md-nav__link">
+    ClassicCamera:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#camerainput" class="md-nav__link">
+    CameraInput:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cameramodule" class="md-nav__link">
+    CameraModule:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -1441,6 +1523,88 @@
     API
   </a>
   
+    <nav class="md-nav" aria-label="API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#followpathpath-vector3" class="md-nav__link">
+    :FollowPath(path: {Vector3})
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getcameracframe" class="md-nav__link">
+    :GetCameraCFrame()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lookatfrom-vector3-to-vector3" class="md-nav__link">
+    :LookAt(from: Vector3, to: Vector3?)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setcameramodecameramode-cameramodeenum" class="md-nav__link">
+    :SetCameraMode(cameraMode: CameraModeEnum)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setcameraoffsetcameraoffset-vector3" class="md-nav__link">
+    :SetCameraOffset(cameraOffset: Vector3)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cameramodule-changes" class="md-nav__link">
+    CameraModule changes:
+  </a>
+  
+    <nav class="md-nav" aria-label="CameraModule changes:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cameraui" class="md-nav__link">
+    CameraUI:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#classiccamera" class="md-nav__link">
+    ClassicCamera:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#camerainput" class="md-nav__link">
+    CameraInput:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cameramodule" class="md-nav__link">
+    CameraModule:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -1461,48 +1625,40 @@
                 
                 
                 <h1 id="cameracontroller">CameraController</h1>
-<h3 id="description">Description</h3>
-<div class="highlight"><pre><span></span><code>CameraController
-
-Exposes methods for manipulating the camera. Internally, it also assigns the Gameplay camera
-on spawn.
-
-There are three cameras available: Gameplay, Static, and Interactable. Gameplay is
-over-the-shoulder with the mouse locked. Static unlocks the mouse and the camera does not follow
-the character; this is for cutscenes. Interactable unlocks the mouse and does not let you pan,
-but the camera still follows your character; this is for accessing menus.
-
-For camera modes where the mouse is unlocked, an invisible TextButton with Modal = true is set
-to visible. This forces the mouse to be moveable.
+<h2 id="description">Description</h2>
+<p>Exposes methods for manipulating the camera. Internally, it also assigns the Gameplay camera on spawn.</p>
+<p>There are three cameras available: Gameplay, Static, and Interactable. Gameplay is over-the-shoulder with the mouse locked. Static unlocks the mouse and the camera does not follow the character; this is for cutscenes. Interactable unlocks the mouse and does not let you pan, but the camera still follows your character; this is for accessing menus.</p>
+<p>For camera modes where the mouse is unlocked, an invisible TextButton with Modal = true is set to visible. This forces the mouse to be moveable.</p>
+<h2 id="api">API</h2>
+<h4 id="followpathpath-vector3">:FollowPath(path: {Vector3})</h4>
+<h4 id="getcameracframe">:GetCameraCFrame()</h4>
+<h4 id="lookatfrom-vector3-to-vector3">:LookAt(from: Vector3, to: Vector3?)</h4>
+<p>If no to is specific, from will be use as the to and the Camera will stay at its current position.</p>
+<h4 id="setcameramodecameramode-cameramodeenum">:SetCameraMode(cameraMode: CameraModeEnum)</h4>
+<div class="highlight"><pre><span></span><code>    Documentation Not Found
 </code></pre></div>
-<h3 id="api">API</h3>
-<div class="highlight"><pre><span></span><code>API:
-:FollowPath(path: {Vector3})
-:GetCameraCFrame()
-:LookAt(from: Vector3, to: Vector3?)
-    If no `to` is specific, `from` will be use as the `to` and the Camera will stay at its
-    current position.
-:SetCameraMode(cameraMode: CameraModeEnum)
-:SetCameraOffset(cameraOffset: Vector3)
-
-CameraModule changes:
-Set computer camera movement to CameraToggle
-Set touch camera movement to Classic
-Note: Does not work with Follow on mobile
-
-CameraUI:
-    &gt; Comment out the implementation for CameraUI.setCameraModeToastEnabled
-    &gt; Comment out the implementation for CameraUI.setCameraModeToastOpen
-ClassicCamera:
-    &gt; Comment out the block that calls self:GetCameraToggleOffset()
-    &gt; Add a local offset at the end of ClassicCamera:Update()
-CameraInput:
-    &gt; Set holdPan and togglePan to true
-    &gt; Comment out the implementation for CameraInput.enableCameraToggleInput()
-    &gt; Comment out the implementation for CameraInput.disableCameraToggleInput()
-CameraModule:
-    &gt; Force return CameraModule.new() at the bottom
+<h4 id="setcameraoffsetcameraoffset-vector3">:SetCameraOffset(cameraOffset: Vector3)</h4>
+<div class="highlight"><pre><span></span><code>Documentation Not Found
 </code></pre></div>
+<h3 id="cameramodule-changes">CameraModule changes:</h3>
+<p>Set computer camera movement to CameraToggle
+, Set touch camera movement to Classic</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Does not work with Follow on mobile</p>
+</div>
+<h4 id="cameraui">CameraUI:</h4>
+<p>Comment out the implementation for <code>CameraUI.setCameraModeToastEnabled</code>
+Comment out the implementation for <code>CameraUI.setCameraModeToastOpen</code></p>
+<h4 id="classiccamera">ClassicCamera:</h4>
+<p>Comment out the block that calls <code>self:GetCameraToggleOffset()</code>
+Add a local offset at the end of <code>ClassicCamera:Update()</code></p>
+<h4 id="camerainput">CameraInput:</h4>
+<p>Set holdPan and togglePan to true
+Comment out the implementation for <code>CameraInput.enableCameraToggleInput()</code>
+Comment out the implementation for <code>CameraInput.disableCameraToggleInput()</code></p>
+<h4 id="cameramodule">CameraModule:</h4>
+<p>Force return <code>CameraModule.new()</code> at the bottom</p>
                 
               
               

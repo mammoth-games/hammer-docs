@@ -1,11 +1,10 @@
 # LobbyService
 
-### Description
+## Description
 
     Description Not Found
 
-### API
+## API
 
-	API:
-	GameLoopService:GetPointGoal()
-	Returns how many points are needed to win the current gamemode
+#### GameLoopService:GetPointGoal()
+Returns how many points are needed to win the current gamemode

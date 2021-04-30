@@ -361,6 +361,33 @@
     API
   </a>
   
+    <nav class="md-nav" aria-label="API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#applyragdollcharacter" class="md-nav__link">
+    :ApplyRagdoll(character)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removeragdollcharacter" class="md-nav__link">
+    :RemoveRagdoll(character)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clientgetupplayer-player" class="md-nav__link">
+    Client:GetUp(player: Player)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -1443,6 +1470,33 @@
     API
   </a>
   
+    <nav class="md-nav" aria-label="API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#applyragdollcharacter" class="md-nav__link">
+    :ApplyRagdoll(character)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removeragdollcharacter" class="md-nav__link">
+    :RemoveRagdoll(character)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clientgetupplayer-player" class="md-nav__link">
+    Client:GetUp(player: Player)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -1463,21 +1517,16 @@
                 
                 
                 <h1 id="ragdollservice">RagdollService</h1>
-<h3 id="description">Description</h3>
-<div class="highlight"><pre><span></span><code>Description Not Found
-</code></pre></div>
-<h3 id="api">API</h3>
-<div class="highlight"><pre><span></span><code>Applies and resets player ragdolls. This is done by adding/removing the &quot;Ragdoll&quot; tag from
-a character. The Ragdoll component handles the actual ragdolling implementation. Clients can
-also tell RagdollService to reset their ragdoll by calling Client:GetUp().
-
-:ApplyRagdoll(character)
-    Adds the &quot;Ragdoll&quot; tag to the character and fires the Client.IsRagdolledChanged remote.
-:RemoveRagdoll(character)
-    Removes the &quot;Ragdoll&quot; tag from the character and fires the Client.IsRagdolledChanged remote.
-Client:GetUp(player: Player)
-    Called by clients. Removes their ragdoll.
-</code></pre></div>
+<h2 id="description">Description</h2>
+<p>Applies and resets player ragdolls. This is done by adding/removing the "Ragdoll" tag from a character. The Ragdoll component handles the actual ragdolling implementation. Clients can also tell RagdollService to reset their ragdoll by calling Client:GetUp().</p>
+<h2 id="api">API</h2>
+<h4 id="applyragdollcharacter">:ApplyRagdoll(character)</h4>
+<p>Adds the "Ragdoll" tag to the character and fires the Client IsRagdolledChanged remote.</p>
+<h4 id="removeragdollcharacter">:RemoveRagdoll(character)</h4>
+<p>Removes the "Ragdoll" tag from the character and fires the Client
+IsRagdolledChanged remote.</p>
+<h4 id="clientgetupplayer-player">Client:GetUp(player: Player)</h4>
+<p>Called by clients. Removes their ragdoll.</p>
                 
               
               

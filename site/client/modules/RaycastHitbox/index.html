@@ -1461,25 +1461,21 @@
                 
                 
                 <h1 id="raycasthitbox">RaycastHitbox</h1>
-<h3 id="description">Description</h3>
-<div class="highlight"><pre><span></span><code>Description Not Found
-</code></pre></div>
-<h3 id="api">API</h3>
-<div class="highlight"><pre><span></span><code>A point caster must be named &quot;$Caster.Point&quot;.
+<h2 id="description">Description</h2>
+<p>A point caster must be named <code>"$Caster.Point"</code>.
 A segment caster must have two attachments named
-&quot;$Caster.Segment.UniqueName.0&quot;  &lt;-- this one is the origin of the raycast
-&quot;$Caster.Segment.UniqueName.1&quot;  &lt;-- this one is the tip of the raycast
-
-RaycastHitbox.new(object: Instance, whitelistedTags: {string})
-    object: The Instance with caster attachments as descendants
-    whitelistedTags: The tags which raycasting will whitelist
-RaycastHitbox:Destroy()
+<code>"$Caster.Segment.UniqueName.0"</code>  &lt;-- this one is the origin of the raycast
+<code>"$Caster.Segment.UniqueName.1"</code>  &lt;-- this one is the tip of the raycast</p>
+<h2 id="api">API</h2>
+<div class="highlight"><pre><span></span><code>RaycastHitbox:Destroy()
 RaycastHitbox:Enable()
 RaycastHitbox:Disable()
 RaycastHitbox:EnableDebug()
 RaycastHitbox:DisableDebug()
 RaycastHitbox.OnHit:Connect(...)
 </code></pre></div>
+<p><strong>RaycastHitbox.new(object: Instance, whitelistedTags: {string})</strong></p>
+<p>object: The Instance with caster attachments as descendants whitelistedTags: The tags which raycasting will whitelist</p>
                 
               
               

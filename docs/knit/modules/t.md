@@ -1,9 +1,9 @@
 # t
 
-### Description
+## Description
 
-    A runtime typechecker for Roblox.
+A runtime typechecker for Roblox.
 
-### API
+## API
 
     Documentation Not Found

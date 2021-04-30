@@ -2,7 +2,7 @@
 
   
 
-### Description
+## Description
 
 **Ethan Curtiss (AstroCode)**
 **29 April 2021**
@@ -26,7 +26,7 @@ If you choose for the nodes to not be self-connected, then the diagonal will be 
     Attempting to set a value between two connected nodes to nil will revert to the userdata `SelfConnectedList.None`. This is because setting the value to nil would lose the connection.
 
 
-### API
+## API
 
 	.new(nodes, defaultValue, connectToSelf)
 	:Add(node, value)

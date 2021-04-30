@@ -1,11 +1,9 @@
 # RagdollController
 
-### Description
-
-	RagdollController
+## Description
 	
-	Facilitates getting up by spamming a button.
+Facilitates getting up by spamming a button.
 
-### API
+## API
 
     Documentation Not Found

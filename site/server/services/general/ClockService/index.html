@@ -507,12 +507,94 @@
     Description
   </a>
   
+    <nav class="md-nav" aria-label="Description">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
   <a href="#api" class="md-nav__link">
     API
   </a>
+  
+    <nav class="md-nav" aria-label="API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#clockservicenewtimerduration-number-name-string" class="md-nav__link">
+    ClockService:newTimer(duration: number?, name: string?)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clockservicenewstopwatchname-string" class="md-nav__link">
+    ClockService:newStopwatch(name: string?)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clockservicegettimername-string" class="md-nav__link">
+    ClockService:GetTimer(name: string)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clockservicegetstopwatchname-string" class="md-nav__link">
+    ClockService:GetStopwatch(name: string)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#timergettime" class="md-nav__link">
+    Timer:GetTime()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#timerdestroy" class="md-nav__link">
+    Timer:Destroy()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stopwatchgettime" class="md-nav__link">
+    Stopwatch:GetTime()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stopwatchbenchmark" class="md-nav__link">
+    Stopwatch:Benchmark()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stopwatchdestroy" class="md-nav__link">
+    Stopwatch:Destroy()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1436,12 +1518,94 @@
     Description
   </a>
   
+    <nav class="md-nav" aria-label="Description">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
   <a href="#api" class="md-nav__link">
     API
   </a>
+  
+    <nav class="md-nav" aria-label="API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#clockservicenewtimerduration-number-name-string" class="md-nav__link">
+    ClockService:newTimer(duration: number?, name: string?)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clockservicenewstopwatchname-string" class="md-nav__link">
+    ClockService:newStopwatch(name: string?)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clockservicegettimername-string" class="md-nav__link">
+    ClockService:GetTimer(name: string)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clockservicegetstopwatchname-string" class="md-nav__link">
+    ClockService:GetStopwatch(name: string)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#timergettime" class="md-nav__link">
+    Timer:GetTime()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#timerdestroy" class="md-nav__link">
+    Timer:Destroy()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stopwatchgettime" class="md-nav__link">
+    Stopwatch:GetTime()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stopwatchbenchmark" class="md-nav__link">
+    Stopwatch:Benchmark()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stopwatchdestroy" class="md-nav__link">
+    Stopwatch:Destroy()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1463,27 +1627,41 @@
                 
                 
                 <h1 id="clockservice">ClockService</h1>
-<h3 id="description">Description</h3>
+<h2 id="description">Description</h2>
 <p>Create timers that count down from a specified time or stopwatches that count up from 0.
 Timers use Signals to be able to fire functions when they complete.</p>
-<div class="highlight"><pre><span></span><code>Ex.
-local timer = ClockService:newTimer(10)
-timer.Completed:Connect(function() end)
-timer.Completed:Wait()
+<h4 id="example">Example</h4>
+<div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">timer</span> <span class="o">=</span> <span class="n">ClockService</span><span class="p">:</span><span class="n">newTimer</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">timer</span><span class="p">.</span><span class="n">Completed</span><span class="p">:</span><span class="n">Connect</span><span class="p">(</span><span class="kr">function</span><span class="p">()</span> <span class="kr">end</span><span class="p">)</span>
+<span class="n">timer</span><span class="p">.</span><span class="n">Completed</span><span class="p">:</span><span class="n">Wait</span><span class="p">()</span>
 </code></pre></div>
-<h3 id="api">API</h3>
-<div class="highlight"><pre><span></span><code>API:
-ClockService:newTimer(duration: number?, name: string?)
-ClockService:newStopwatch(name: string?)
-ClockService:GetTimer(name: string)
-ClockService:GetStopwatch(name: string)
-k
-Timer:GetTime()
-Timer:Destroy()
-
-Stopwatch:GetTime()
-Stopwatch:Benchmark()
-Stopwatch:Destroy()
+<h2 id="api">API</h2>
+<h4 id="clockservicenewtimerduration-number-name-string">ClockService:newTimer(duration: number?, name: string?)</h4>
+<div class="highlight"><pre><span></span><code>Documentation Not Found
+</code></pre></div>
+<h4 id="clockservicenewstopwatchname-string">ClockService:newStopwatch(name: string?)</h4>
+<div class="highlight"><pre><span></span><code>Documentation Not Found
+</code></pre></div>
+<h4 id="clockservicegettimername-string">ClockService:GetTimer(name: string)</h4>
+<div class="highlight"><pre><span></span><code>Documentation Not Found
+</code></pre></div>
+<h4 id="clockservicegetstopwatchname-string">ClockService:GetStopwatch(name: string)</h4>
+<div class="highlight"><pre><span></span><code>Documentation Not Found
+</code></pre></div>
+<h4 id="timergettime">Timer:GetTime()</h4>
+<div class="highlight"><pre><span></span><code>Documentation Not Found
+</code></pre></div>
+<h4 id="timerdestroy">Timer:Destroy()</h4>
+<div class="highlight"><pre><span></span><code>Documentation Not Found
+</code></pre></div>
+<h4 id="stopwatchgettime">Stopwatch:GetTime()</h4>
+<div class="highlight"><pre><span></span><code>Documentation Not Found
+</code></pre></div>
+<h4 id="stopwatchbenchmark">Stopwatch:Benchmark()</h4>
+<div class="highlight"><pre><span></span><code>Documentation Not Found
+</code></pre></div>
+<h4 id="stopwatchdestroy">Stopwatch:Destroy()</h4>
+<div class="highlight"><pre><span></span><code>Documentation Not Found
 </code></pre></div>
                 
               

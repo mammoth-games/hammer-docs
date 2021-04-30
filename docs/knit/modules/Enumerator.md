@@ -1,11 +1,9 @@
 # Enumerator
 
-### Description
+## Description
 
-    enumerations in pure Luau
-    @docs https://roblox.github.io/enumerate/
-    documented changed functions
+enumerations in pure Luau @docs https://roblox.github.io/enumerate/ documented changed functions
 
-### API
+## API
 
     Documentation Not Found
