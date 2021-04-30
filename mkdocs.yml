@@ -77,7 +77,7 @@ extra_css:
   - stylesheets/extra.css
 theme:
   name: material
-  favicon: img/hammer_small.png
+  favicon: img/hammer_small_red.png
   logo: img/hammer_small.png
   palette:
     - media: "(prefers-color-scheme: light)"
