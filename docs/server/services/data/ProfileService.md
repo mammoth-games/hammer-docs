@@ -1,10 +1,10 @@
 # PlayerCharacterService
 
-### Description
+## Description
 
 Makes player data accessible for other scripts
 
-### API
+## API
 
 
 #### Example

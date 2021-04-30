@@ -1,9 +1,9 @@
 # DeathService
 
-### Description
+## Description
 
 Ragdolls a character when it dies, but not when its RootPart is below `workspace.FallenPartsDestroyHeight`.
 
-### API
+## API
 
     Documentation Not Found
