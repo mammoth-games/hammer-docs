@@ -32,7 +32,6 @@ timer.Completed:Wait()
 
 #### Timer:Destroy()
     Documentation Not Found
-
 	
 #### Stopwatch:GetTime()
     Documentation Not Found

@@ -11,10 +11,10 @@ Facilitates applying Lighting, Sky, and PostEffect changes and smoothly tweens p
 
 #### :ResetProperties()
 
-    Reset the Lighting, Sky, and PostEffects properties to default
+Reset the Lighting, Sky, and PostEffects properties to default
 	
 #### :ApplyProperties(properties: Dictionary, lightingFolder: Folder?)
 
-    `properties` is a string-indexes dictionary of properties for Lighting.
+`properties` is a string-indexes dictionary of properties for Lighting.
     
-    `lightingFolder` is a folder containing a Sky object and/or PostEffect objects.
+`lightingFolder` is a folder containing a Sky object and/or PostEffect objects.
