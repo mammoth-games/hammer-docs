@@ -6,6 +6,7 @@ nav:
             - Characters: 
                 - DeathService: server/services/characters/DeathService.md
                 - RagdollService: server/services/characters/RagdollService.md
+                - AvatarService: server/services/characters/AvatarService.md
             - Data:
                 - PlayerCharacterService: server/services/data/PlayerCharacterService.md
                 - ProfileService: server/services/data/ProfileService.md
@@ -15,6 +16,7 @@ nav:
                 - MapService: server/services/gameplay/MapService.md
             - General:
                 - ClockService: server/services/general/ClockService.md
+                - LightingService: server/services/general/LightingService.md
             - Hammers:
                 - HammerService: server/services/hammers/HammerService.md
                 - HitService: server/services/hammers/HitService.md
@@ -50,6 +52,7 @@ nav:
                 - KingIndicatorController: knit/controllers/ui/KingIndicatorController.md
                 - ProgressBarController: knit/controllers/ui/ProgressBarController.md
                 - UserInterfaceController: knit/controllers/ui/UserInterfaceController.md
+                - BamMeterController: knit/controllers/ui/BamMeterController.md
             - AudioController: knit/controllers/AudioController.md
             - CameraController: knit/controllers/CameraController.md
             - CrownController: knit/controllers/CrownController.md
