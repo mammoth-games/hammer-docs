@@ -38,3 +38,27 @@
 
 #### :GetPlayerDataFromCharacter(character: model)
     Documentation Not Found
+
+
+# PlayerDataClass
+
+## Description
+
+    Description Not Found
+
+## API
+
+### Fields
+`.Callbacks`
+`.Name`
+`.PlayerObject`
+`.UserId`
+
+#### :CharacterAdded(character)
+    Documentation Not Found
+#### :CharacterRemoving()
+    Documentation Not Found
+#### :GetVariable(name: string)
+    Documentation Not Found
+#### :SetVariable(name: string, value: any)
+    Documentation Not Found
