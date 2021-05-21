@@ -74,14 +74,16 @@ nav:
         - KnitClient: knit/KnitClient.md
         - KnitServer: knit/KnitServer.md
     - Utils: utils.md
+    - Miscellaneous:
+        - ConceptArt: art.md
 
 repo_url: https://github.com/mammoth-games/hammer
 extra_css:
   - stylesheets/extra.css
 theme:
   name: material
-  favicon: img/hammer_small_red.png
-  logo: img/hammer_small.png
+  favicon: img/site/hammer_small_red.png
+  logo: img/site/hammer_small.png
   palette:
     - media: "(prefers-color-scheme: light)"
       primary: red
