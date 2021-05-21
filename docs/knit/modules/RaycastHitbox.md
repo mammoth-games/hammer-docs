@@ -30,6 +30,6 @@ A segment caster must have two attachments named
 #### RaycastHitbox.OnHit:Connect(...)
     Documentation Not Found
     
-#### RaycastHitbox.new(object: Instance, whitelistedTags: {string})**
+#### RaycastHitbox.new(object: Instance, whitelistedTags: {string})
 
 The Instance with caster attachments as descendants whitelistedTags: The tags which raycasting will whitelist
