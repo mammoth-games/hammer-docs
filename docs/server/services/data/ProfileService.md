@@ -1,5 +1,8 @@
 # PlayerCharacterService
 
+!!! warning
+    This Page needs more info, Contact AstroCode#9853 and bug him to add more info to this page.
+
 ## Description
 
 Makes player data accessible for other scripts

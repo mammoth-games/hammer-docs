@@ -1,5 +1,8 @@
 # LightingService
 
+!!! warning
+    This Page needs more info, Contact AstroCode#9853 and bug him to add more info to this page.
+
 ## Description
 
 Facilitates applying Lighting, Sky, and PostEffect changes and smoothly tweens properties. It purposefully does not support BlurEffects, as the MVP did not need it. In the future, it would be helpful to be able to individually change PostEffects.
