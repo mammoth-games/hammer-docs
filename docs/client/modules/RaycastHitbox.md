@@ -1,5 +1,8 @@
 # RaycastHitbox
 
+**RaycastHitbox**
+**by AstroCode**
+
 ## Description
 
 A point caster must be named `"$Caster.Point"`.
@@ -9,15 +12,24 @@ A segment caster must have two attachments named
 
 ## API
 
-```
-RaycastHitbox:Destroy()
-RaycastHitbox:Enable()
-RaycastHitbox:Disable()
-RaycastHitbox:EnableDebug()
-RaycastHitbox:DisableDebug()
-RaycastHitbox.OnHit:Connect(...)
-```
+#### RaycastHitbox:Destroy()
+    Documentation Not Found
 
-**RaycastHitbox.new(object: Instance, whitelistedTags: {string})**
+#### RaycastHitbox:Enable()
+    Documentation Not Found
 
-object: The Instance with caster attachments as descendants whitelistedTags: The tags which raycasting will whitelist
+#### RaycastHitbox:Disable()
+    Documentation Not Found
+
+#### RaycastHitbox:EnableDebug()
+    Documentation Not Found
+
+#### RaycastHitbox:DisableDebug()
+    Documentation Not Found
+
+#### RaycastHitbox.OnHit:Connect(...)
+    Documentation Not Found
+    
+#### RaycastHitbox.new(object: Instance, whitelistedTags: {string})**
+
+The Instance with caster attachments as descendants whitelistedTags: The tags which raycasting will whitelist
