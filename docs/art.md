@@ -9,6 +9,6 @@
 ![Hammer One](./img/concept/HammerTypes_01.png)
 ![Hammer Two](./img/concept/HammerTypes_02.png)
 
-## 3D Models
-<img src=/img/concept/pirate.png alt="Pirate" width="350" hight="350"/>
-<img src=/img/concept/zombie.png alt="Zombie" width="400" hight="400"/>
+## 3D
+![Pirate](./img/concept/pirate.png)
+![Zombie](./img/concept/zombie.png)
