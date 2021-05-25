@@ -9,6 +9,15 @@
 ![Hammer One](./img/concept/HammerTypes_01.png)
 ![Hammer Two](./img/concept/HammerTypes_02.png)
 
-## 3D
+## 3D 
+
+### Characters
 ![Pirate](./img/concept/pirate.png)
 ![Zombie](./img/concept/zombie.png)
+
+### Weapons/Tools
+![Sword](./img/concept/sword.png)
+
+
+## Other
+![Football](./img/concept/Football.png)
