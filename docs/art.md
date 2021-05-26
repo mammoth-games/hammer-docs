@@ -14,7 +14,7 @@
 ### UI Costume Concept
 <center>
     <video width="540" height="360" controls>
-        <source src="/img/concept/Roblox_ui_test.mp4" type="video/mp4">
+        <source src="./img/concept/Roblox_ui_test.mp4" type="video/mp4">
         Your browser does not support the video tag. :(
     </video>
 </center>
