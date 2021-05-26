@@ -2,16 +2,12 @@
 
 ## UI 
 
-### Shop UI One
+### Shop UI Concepts
 ![Shop UI Concept One](./img/concept/ShopUI_01.png)
-
-### Shop UI Two
 ![Shop UI Concept Two](./img/concept/ShopUI_02.png)
-
-### Shop UI Three
 ![Shop UI Concept Three](./img/concept/ShopUI_03.png)
 
-## Hammers
+## Hammer Concepts
 
 ![Hammer One](./img/concept/HammerTypes_01.png)
 ![Hammer Two](./img/concept/HammerTypes_02.png)
@@ -24,7 +20,6 @@
 
 ### Weapons/Tools
 ![Sword](./img/concept/sword.png)
-
 
 ## Other
 ![Football](./img/concept/Football.png)
