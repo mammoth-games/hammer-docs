@@ -75,7 +75,7 @@ nav:
         - KnitServer: knit/KnitServer.md
     - Utils: utils.md
     - Miscellaneous:
-        - ConceptArt: art.md
+        - ConceptArt: misc/art.md
 
 repo_url: https://github.com/mammoth-games/hammer
 extra_css:
