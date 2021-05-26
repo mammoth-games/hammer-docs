@@ -7,8 +7,9 @@
 ![Shop UI Concept Two](./img/concept/ShopUI_02.png)
 ![Shop UI Concept Three](./img/concept/ShopUI_03.png)
 
-## Hammer Concepts
+## Hammers
 
+### Hammer Concepts
 ![Hammer One](./img/concept/HammerTypes_01.png)
 ![Hammer Two](./img/concept/HammerTypes_02.png)
 
