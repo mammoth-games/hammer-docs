@@ -7,6 +7,9 @@
 ![Shop UI Concept Two](../img/concept/ShopUI_02.png)
 ![Shop UI Concept Three](../img/concept/ShopUI_03.png)
 
+### Character Customization
+![Character Customization](../img/concept/Roblox_ui_test.gif)
+
 ## Hammers
 
 ### Hammer Concepts
