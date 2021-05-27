@@ -76,6 +76,7 @@ nav:
     - Utils: utils.md
     - Miscellaneous:
         - ConceptArt: misc/art.md
+        - Costumes: misc/costumes.md
 
 repo_url: https://github.com/mammoth-games/hammer
 extra_css:
