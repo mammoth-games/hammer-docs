@@ -21,6 +21,7 @@
 ### Characters
 ![Pirate](../img/concept/pirate.png)
 ![Zombie](../img/concept/zombie.png)
+![Cowboy](../img/concept/cowboy.png)
 
 ### Weapons/Tools
 ![Sword](../img/concept/sword.png)
