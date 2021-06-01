@@ -16,6 +16,9 @@
 ![Hammer One](../img/concept/HammerTypes_01.png)
 ![Hammer Two](../img/concept/HammerTypes_02.png)
 
+### Game Loading/Intro
+![Intro](../img/concept/intro_concept.gif)
+
 ## 3D 
 ### Weapons/Tools
 ![Sword](../img/concept/sword.png)
