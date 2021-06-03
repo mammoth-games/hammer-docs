@@ -17,7 +17,13 @@
 ### Chef
 ![Chef](../img/costumes/chef.png)
 
+### Alien
+![Alien](../img/costumes/alien.png)
+
+### Demon
+![Demon](../img/site/placeholder.png)
+
 ## Costumes Concepts
 
-![Costumes1](../img/concept/costumes_01.jpg)
-![Costumes2](../img/concept/costumes_02.jpg)
+![Costumes1](../img/costumes/costumes_01.jpg)
+![Costumes2](../img/costumes/costumes_02.jpg)
