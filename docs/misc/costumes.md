@@ -47,16 +47,13 @@
 ![Cyborg](../img/costumes/Cyborg_concept.png)
 
 ### Demon
-![Demon](../img/costumes/Cyborg_concept.png)
+![Demon](../img/costumes/Demon_concept.png)
 
 ### Eskimo
-![Eskimo](../img/costumes/Demon_concept.png)
+![Eskimo](../img/costumes/Eskimo_concept.png)
 
 ### Explorer
-![Explorer](../img/costumes/Diver_concept.png)
-
-### Miner
-![Miner](../img/costumes/Eskimo_concept.png)
+![Explorer](../img/costumes/Explorer_concept.png)
 
 ### Samurai
 ![Samurai](../img/costumes/Samurai_concept.png)
