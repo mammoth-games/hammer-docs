@@ -1,10 +1,11 @@
 ## Current Developers
 - AstroCode
 - Matasmathew
-- Seakat MC. Kitten Face
+- Seakat
 - Tomgie
 - WohoNavy
 - Zeloi
+- ColeSquared
 
 ## Information
 We are using the [Knit](https://github.com/Sleitnick/Knit/) framework by sleitnick.
