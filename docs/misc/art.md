@@ -25,3 +25,19 @@
 
 ## Other
 ![Football](../img/concept/Football.png)
+
+## Character
+
+### Character Emotes
+
+### Normal
+![Normal](../img/emotes/normal.png)
+
+### Happy
+![Happy](../img/emotes/happy.png)
+
+### Dizzy
+![Dizzy](../img/emotes/dizzy.png)
+
+### Knocked Out
+![Knocked Out](../img/emotes/knocked_out.png)

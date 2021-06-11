@@ -27,3 +27,39 @@
 
 ![Costumes1](../img/costumes/costumes_01.jpg)
 ![Costumes2](../img/costumes/costumes_02.jpg)
+
+### Alien
+![Alien](../img/costumes/Alien_concept.png)
+
+### Angel
+![Angel](../img/costumes/Angel_concept.png)
+
+### Astronaut
+![Astronaut](../img/costumes/Astronaut_concept.png)
+
+### Bandit
+![Bandit](../img/costumes/Bandit_concept.png)
+
+### Copyrighted
+![Copyrighted](../img/costumes/Copyrighted.png)
+
+### Cyborg
+![Cyborg](../img/costumes/Cyborg_concept.png)
+
+### Demon
+![Demon](../img/costumes/Cyborg_concept.png)
+
+### Eskimo
+![Eskimo](../img/costumes/Demon_concept.png)
+
+### Explorer
+![Explorer](../img/costumes/Diver_concept.png)
+
+### Miner
+![Miner](../img/costumes/Eskimo_concept.png)
+
+### Samurai
+![Samurai](../img/costumes/Samurai_concept.png)
+
+### Skeleton
+![Skeleton](../img/costumes/Skeleton_concept.png)
