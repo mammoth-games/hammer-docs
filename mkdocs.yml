@@ -1,4 +1,4 @@
-site_name: Hammer Game
+site_name: Hammer Game Documentation
 repo_url: https://github.com/mammoth-games/hammer
 extra_css:
   - stylesheets/extra.css
