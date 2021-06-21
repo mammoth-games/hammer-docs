@@ -2,7 +2,7 @@
 - AstroCode: Team lead, programmer
 - ColeSquared: Programmer
 - Matasmathew: Artist
-- Seakat: Manager
+- seakat: Manager
 - WohoNavy: Artist
 - Zeloi: Programmer
 
