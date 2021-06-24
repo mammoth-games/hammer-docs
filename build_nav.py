@@ -19,8 +19,12 @@ def recurse_tree(path, depth):
             
             if file_name_tuple[1] == ".md":
                 file_name = dirEntry.name.split(".")[0] # get what's before the .md
-                relative_file_path = dirEntry.path[path_substring_start:] # get rid of the root path at the start
-                nav_string += "  " * depth + "- " + file_name + ": " + relative_file_path + "\n"
+
+                if file_name == "index" and depth == 1:
+                    nav_string += "  - Home: index.md\n"
+                else:
+                    relative_file_path = dirEntry.path[path_substring_start:] # get rid of the root path at the start
+                    nav_string += "  " * depth + "- " + file_name + ": " + relative_file_path + "\n"
     
     return nav_string
 
