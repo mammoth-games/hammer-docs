@@ -16,17 +16,6 @@ jobs:
           python-version: 3.x
       - name: Build
         run: python build_nav.py
-      - name: Commit nav
-        run: |
-          git config --global user.email "bot@github.com"
-          git config --global user.name "build-and-deploy action"
-          git add mkdocs.yml
-          git commit -m "build nav"
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ github.ref }}
       - name: Deploy
         run: |
           pip install mkdocs-material
