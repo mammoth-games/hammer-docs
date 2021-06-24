@@ -19,7 +19,7 @@ jobs:
       - name: Commit nav
         run: |
           git config --global user.email "bot@github.com"
-          git config --global user.name "bot"
+          git config --global user.name "build-and-deploy action"
           git add mkdocs.yml
           git commit -m "build nav"
       - name: Push changes
