@@ -18,6 +18,8 @@ jobs:
         run: python build_nav.py
       - name: Commit nav
         run: |
+          git config --global user.email "bot@github.com"
+          git config --global user.name "bot"
           git add mkdocs.yml
           git commit -m "build nav"
       - name: Deploy
