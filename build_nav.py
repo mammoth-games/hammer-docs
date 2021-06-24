@@ -17,7 +17,7 @@ def recurse_tree(path, depth):
     
     return nav_string
 
-nav = "\n\nnav:\n" + recurse_tree(".\docs", 1)
+nav = "\n\nnav:\n" + recurse_tree("./docs", 1)
 
 with open("mkdocs.yml", "a") as f:
     f.write(nav)
