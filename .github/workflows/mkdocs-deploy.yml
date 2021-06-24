@@ -8,10 +8,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+        with:
+          persistent-credentials: false
+          fetch-depth: 0
       - uses: actions/setup-python@v2
         with:
           python-version: 3.x
+      - name: Build
       - run: python build_nav.py
+      - name: Commit nav
+      - run: |
+          git config -m "build nav"
+      - name: Deploy
       - run: |
           pip install mkdocs-material
           mkdocs gh-deploy --force
