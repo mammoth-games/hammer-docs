@@ -31,5 +31,5 @@ markdown_extensions:
     - pymdownx.superfences
     - pymdownx.inlinehilite
     - pymdownx.keys
-    - admonition
     - pymdownx.tabbed
+    - admonition

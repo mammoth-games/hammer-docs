@@ -4,7 +4,8 @@ docs_dir_path = "docs"
 path_substring_start = len(docs_dir_path) + 1
 
 def recurse_tree(path, depth):
-    nav_string = ""
+    nav_dirs = []
+    nav_files = []
 
     for dirEntry in os.scandir(path):
         if dirEntry.is_dir():
@@ -12,8 +13,7 @@ def recurse_tree(path, depth):
             
             if len(recurse_string) > 0:
                 # this is only true when there is a nested .md in this directory
-                nav_string += "  " * depth + "- " + dirEntry.name + ":\n"
-                nav_string += recurse_string
+                nav_dirs.insert(0, "  " * depth + "- " + dirEntry.name + ":\n" + recurse_string)
         elif dirEntry.is_file():
             file_name_tuple = os.path.splitext(dirEntry.path)
             
@@ -21,12 +21,15 @@ def recurse_tree(path, depth):
                 file_name = dirEntry.name.split(".")[0] # get what's before the .md
 
                 if file_name == "index" and depth == 1:
-                    nav_string += "  - Home: index.md\n"
+                    nav_files.insert(0, "  - Home: indexs.md\n")
                 else:
                     relative_file_path = dirEntry.path[path_substring_start:] # get rid of the root path at the start
-                    nav_string += "  " * depth + "- " + file_name + ": " + relative_file_path + "\n"
+                    nav_files.insert(0, "  " * depth + "- " + file_name + ": " + relative_file_path + "\n")
     
-    return nav_string
+    nav_dirs = sorted(nav_dirs) # sort alphabetically
+    nav_files = sorted(nav_files)
+
+    return "".join(nav_dirs) + "".join(nav_files)
 
 nav = "\n\nnav:\n" + recurse_tree(docs_dir_path, 1)
 
