@@ -11,8 +11,8 @@ jobs:
       - uses: actions/setup-python@v2
         with:
           python-version: 3.x
-      # - name: Build
-      #   run: python build_nav.py
+      - name: Build
+        run: python build_nav.py
       - name: Deploy
         run: |
           pip install mkdocs-material
