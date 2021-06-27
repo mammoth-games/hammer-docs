@@ -62,40 +62,11 @@ We are aiming for a style with a low amount of colors per character. Therefore, 
 7. Programmer incorporates the metadata, meshes, and textures into the game
 
 ## Blend file checklist
-
-!!! blender "[Costume]_[Variation]_Costume.blend"
-
-	!!! blender-collection "Scene Collection"
-		!!! blender-collection "Costume"
-			Costume meshes.
-
-			If only one mesh corresponds to a body part, name it "[BodyPart]". If mutliple meshes correspond to the same body part, put them in a "[BodyPart]" sub-collection. Name each object in this sub-collection "[BodyPart]_[MeshName]".
-
-		!!! blender-collection "Eyes"
-			The unaltered rig's eyes.
-
-			Position the eyes on the head as you please. Delete any unneeded eyes. If no eyes are needed, delete this collection.
-
-		!!! blender-collection "Reused"
-			Reused meshes from other costumes **with unaltered UV maps**.
-
-			Name the reused mesh "[OriginalCostume]_[OriginalVariation]_[BodyPart]_[MeshName]". If the mesh is skin, append ".Skin" to the name. You do not need the "_[MeshName]" if the original mesh did not have it in its .blend file.
-
-		!!! blender-collection "Rig"
-			The unaltered rig.
-
-			Keep the default body parts that the costume does not override; delete the rest.
-			Prefix the name of mesh with "Rig_".
-			These meshes will not be imported to Roblox but are helpful for previewing the full costume.
-
-		!!! blender-collection "Skin"
-			Skin meshes.
-
-			Name each skin mesh "Skin_[BodyPart]". You can only have one skin mesh per body part.
+This section describes how to format your .blend file. It was designed for minimal typing while guaranteeing no name conflicts.
 
 1. Name the blend file `[Costume]_[Variation]_Costume`. *(ex: Pirate_Patchy_Costume.blend)*
 1. Put the unaltered rig in a `Rig` collection. Keep the default body parts that the costume does not override; delete the rest. *(ex: Snorkeler wears a bathing suit that doesn't alter the arms, so they are kept)*
-	* Prefix the name of each default body part mesh with `Rig`. This is to differentiate them from costume meshes.
+	* Prefix the name of each default body part mesh with `Rig_`. This is to differentiate them from costume meshes.
 	* These meshes will not be imported to Roblox but are helpful in previewing the full costume.
 1. Put the costume meshes in a `Costume` collection.
 	* If only one mesh corresponds to a body part, name it `[BodyPart]`. *(ex: LeftLeg)*
@@ -110,13 +81,62 @@ We are aiming for a style with a low amount of colors per character. Therefore, 
 		1. You do not need the `_[MeshName]` suffix if the original mesh did not have one in its .blend file.
 1. Set each mesh's pivot to its corresponding body part’s pivot.
 
-### Example: Pirate_Patchy_Costume.blend
-This example is oudated but I'm keeping it here for now as a reference for when I redo this section.
-=== "Example"
-	![patchy](./img/patchy.png)![patchy example](./img/costume_example.png)
+Here's a graphic version of the same information, if that's your style.
+??? blender "[Costume]_[Variation]_Costume.blend"
 
-=== "Highlighted"
-	![patchy highlighted](./img/patchy_highlighted.png)![patchy example highlighted](./img/costume_example_highlighted.png)
+	???+ blender-collection "Scene Collection"
+		??? blender-collection "Costume"
+			Costume meshes.
+
+			If only one mesh corresponds to a body part, name it `[BodyPart]`. If mutliple meshes correspond to the same body part, put them in a `[BodyPart]` sub-collection. Name each object in this sub-collection `[BodyPart]_[MeshName]`.
+
+			!!! blender-mesh "[BodyPart]"
+			!!! blender-collection "[BodyPart]"
+				!!! blender-mesh "[BodyPart]_[MeshName]"
+
+		??? blender-collection "Eyes"
+			The unaltered rig's eyes.
+
+			Position the eyes on the head as you please. Delete any unneeded eyes. If no eyes are needed, delete this collection.
+
+			!!! blender-mesh "LeftEye"
+			!!! blender-mesh "RightEye"
+
+		??? blender-collection "Reused"
+			Reused meshes from other costumes **with unaltered UV maps**.
+
+			Name the reused mesh `[OriginalCostume]_[OriginalVariation]_[BodyPart]_[MeshName]`. If the mesh is skin, append `.Skin` to the name. You do not need the `_[MeshName]` if the original mesh did not have it in its .blend file.
+
+			!!! blender-mesh "[OriginalCostume]\_[OriginalVariation]_[BodyPart]"
+			!!! blender-mesh "[OriginalCostume]\_[OriginalVariation]_[BodyPart].Skin"
+			!!! blender-mesh "[OriginalCostume]\_[OriginalViaration]\_[BodyPart]_[MeshName]"
+			!!! blender-mesh "[OriginalCostume]\_[OriginalViaration]\_[BodyPart]_[MeshName].Skin"
+
+
+
+		??? blender-collection "Rig"
+			The unaltered rig.
+
+			Keep the default body parts that the costume does not override; delete the rest.
+			Name each mesh `Rig_[BodyPart]`.
+			These meshes will not be imported to Roblox but are helpful for previewing the full costume.
+
+			!!! blender-mesh "Rig_Head"
+			!!! blender-mesh "Rig_LeftArm"
+			!!! blender-mesh "Rig_LeftLeg"
+			!!! blender-mesh "Rig_RightArm"
+			!!! blender-mesh "Rig_RightLeg"
+			!!! blender-mesh "Rig_Torso"
+
+		??? blender-collection "Skin"
+			Skin meshes.
+
+			Name each skin mesh `Skin_[BodyPart]`. You can only have one skin mesh per body part. If there are no skin meshes, delete this collection.
+
+			!!! blender-mesh "Skin_[BodyPart]"
+
+!!! example "Pirate_Crewmate_Costume.blend"
+	![patchy](./img/crewmate.png)![patchy example](./img/costume_example2.png)
 
 ## Metadata
 The metadata that will be generated for each costume. We will then parse these files in order to generate a tree of folders with attributes and Accessory objects.
