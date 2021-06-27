@@ -2,7 +2,7 @@ name: Build nav and gh-deploy
 on:
   push:
     branches:
-      - merge
+      - master
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
