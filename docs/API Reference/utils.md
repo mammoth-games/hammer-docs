@@ -1,7 +1,5 @@
 # Utils
 These are utils that did not come with stock Knit.
-## BasicState
-[GitHub](https://github.com/csqrl/BasicState)
 ## Enumerator
 [External docs](https://roblox.github.io/enumerate/api-reference/)
 ## Janitor
