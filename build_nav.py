@@ -2,16 +2,14 @@
 # empty and have mkdocs build it for you, but defining the nav is necessary
 # if you use the navigation.tabs feature.
 #
-# The nav builder is opinionated.
-# * Everything is sorted in alphabetical order with all directories coming
-#   before all files in the same depth level.
-# * You must pre-define the order of your tabs in the TAB_ORDER list.
-# * If the first line of a file is a header ("# NameOfFile") then everything
+# Everything is sorted in alphabetical order with all files coming
+#   before all directories in the same depth level.
+# You must pre-define the order of your tabs in the TAB_ORDER list.
+# If the first line of a file is a header ("# NameOfFile") then everything
 #   after the "# " in the first line will be used as the name of the file.
 #   Quotes will be put around the name for safety.
-# * You cannot pre-define the order of anything deeper than tabs. That defeats
+# You cannot pre-define the order of anything deeper than tabs. That defeats
 #   the purpose of this module.
-#
 # Directories that don't contain any nested .md files are ignored.
 
 import os
@@ -65,7 +63,7 @@ def recurse_tree(path, depth):
     nav_dirs = sorted(nav_dirs)  # sort alphabetically
     nav_files = sorted(nav_files)
 
-    return "".join(nav_dirs) + "".join(nav_files)
+    return "".join(nav_files) + "".join(nav_dirs)
 
 
 nav = "\n\nnav:\n"
