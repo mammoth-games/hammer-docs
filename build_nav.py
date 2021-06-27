@@ -53,14 +53,14 @@ def recurse_tree(path, depth):
 
                 with open(dirEntry.path, "r", errors="ignore") as f:
                     first_line = f.readline().strip()
-                    # if first_line[0:2] == "# ":
-                    #     nav_files.append(
-                    #         f"{'  ' * depth}- \"{first_line[2:]}\": {relative_file_path}\n"
-                    #     )
-                    # else:
-                    nav_files.append(
-                        f"{'  ' * depth}- {file_name}: {relative_file_path}\n"
-                    )
+                    if first_line[0:2] == "# ":
+                        nav_files.append(
+                            f"{'  ' * depth}- \"{first_line[2:]}\": {relative_file_path}\n"
+                        )
+                    else:
+                        nav_files.append(
+                            f"{'  ' * depth}- {file_name}: {relative_file_path}\n"
+                        )
 
     nav_dirs = sorted(nav_dirs)  # sort alphabetically
     nav_files = sorted(nav_files)
