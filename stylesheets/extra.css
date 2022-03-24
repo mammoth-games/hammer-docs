@@ -1,0 +1,70 @@
+[data-md-color-scheme="slate"] {
+	/* --md-default-bg-color: hsla(var(--md-hue), 15%, 7%, 1); */
+	--md-default-bg-color: rgb(16, 16, 16)
+}
+
+:root {
+	--md-admonition-icon--blender-collection: url("./blender_collection.svg");
+	--md-admonition-icon--blender: url("./blender.svg");
+	--md-admonition-icon--blender-mesh: url("./blender_mesh.svg");
+	--blender-orange: rgb(232, 125, 13);
+	--blender-blue: rgb(59, 86, 137, 0.4);
+	--blender-mesh: #c68652;
+	--blender-light-grey: rgb(45, 45, 45, 0.5);
+	--blender-dark-grey: rgb(31, 31, 31, 0.5);
+}
+
+/* blender-collection admonition*/
+.md-typeset .admonition.blender-collection,
+.md-typeset details.blender-collection {
+	border-color: var(--blender-light-grey);
+	background-color: #ffffff00;
+	font-size: 1em;
+}
+.md-typeset .blender-collection > .admonition-title,
+.md-typeset .blender-collection > summary {
+	background-color: var(--blender-light-grey);
+	border-color: #ffffff00;
+}
+.md-typeset .blender-collection > .admonition-title::before,
+.md-typeset .blender-collection > summary::before {
+	background-color: #fff;
+	-webkit-mask-image: var(--md-admonition-icon--blender-collection);
+			mask-image: var(--md-admonition-icon--blender-collection);
+}
+
+/* blender admonition*/
+.md-typeset .admonition.blender,
+.md-typeset details.blender {
+	border-color: var(--blender-orange);
+	font-size: 1em;
+}
+.md-typeset .blender > .admonition-title,
+.md-typeset .blender > summary {
+	background-color: var(--blender-orange);
+	border-color: var(--blender-orange);
+}
+.md-typeset .blender > .admonition-title::before,
+.md-typeset .blender > summary::before {
+	background-color: #fff;
+	-webkit-mask-image: var(--md-admonition-icon--blender);
+			mask-image: var(--md-admonition-icon--blender);
+}
+
+/* blender-mesh admonition */
+.md-typeset .admonition.blender-mesh,
+.md-typeset details.blender-mesh {
+	border-color: var(--blender-blue);
+	background-color: #ffffff00;
+	font-size: 1em;
+}
+.md-typeset .blender-mesh > .admonition-title,
+.md-typeset .blender-mesh > summary {
+	background-color: var(--blender-blue);
+}
+.md-typeset .blender-mesh > .admonition-title::before,
+.md-typeset .blender-mesh > summary::before {
+	background-color: #fff;
+	-webkit-mask-image: var(--md-admonition-icon--blender-mesh);
+			mask-image: var(--md-admonition-icon--blender-mesh);
+}
