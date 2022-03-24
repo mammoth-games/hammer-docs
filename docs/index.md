@@ -1,6 +1,6 @@
 ## Developers
 - AstroCode: Team lead, programmer
-- ColeSquared: Programmer
+- maddy!: Programmer
 - Matasmathew: Artist
 - seakat: Manager
 - WohoNavy: Artist
