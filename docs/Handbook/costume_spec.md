@@ -23,7 +23,7 @@ If a costume reuses a mesh, you should be cautious of altering its UV map, as we
 	![pirates](./img/pirates.png)
 
 ## Eyes
-Costumes cannot have their own eye meshes because we will use a separate system for animated facial expressions. You can, however, specify the visibility, scale, and 2D location of each eye.
+Costumes cannot have their own eye meshes because we will use a separate system for animated facial expressions. You can, however, specify the visibility and 2D location of each eye.
 
 !!! example
 	Crewmate has its left eye hidden and Patchy has both eyes hidden. Also, Crewmate has its right eye shifted down because the pirate hat covers the eye's default position.
@@ -73,7 +73,7 @@ This section describes how to format your .blend file. It was designed for minim
 	* If multiple objects correspond to the same body part, put them in a collection named `[BodyPart]`. Name each object in this sub-collection `[BodyPart]_[MeshName]`. *(ex: Head_Eyepatch)*
 1. Put skin meshes in a `Skin` collection. Name each `Skin_[BodyPart]`.
 	* You can only have one skin mesh per body part.
-1. Put the rig's default eyes in an `Eyes` collection. Position and scale them as you please. Delete any unneeded eyes. If no eyes are needed, you do not need the `Eyes` collection.
+1. Put the rig's default eyes in an `Eyes` collection. Position them on the head as you please. Delete any unneeded eyes. If no eyes are needed, you do not need the `Eyes` collection.
 1. If you reused a mesh from another costume **and did not alter its UV map**, do the following:
 	1. Put the mesh inside a `Reused` collection.
 	1. Name the mesh `[OriginalCostume]_[OriginalVariation]_[BodyPart]_[MeshName]`.
@@ -174,16 +174,10 @@ local CostumeData = {
 	},
 
 	Eyes = {
-		LeftEye = {
-			Position = Vector2.new(),
-			Scale = Vector3.new(),
-			Visible = true
-		},
-		RightEye = {
-			Position = Vector2.new(),
-			Scale = Vector3.new(),
-			Visible = true
-		}
+		LeftEyePosition = Vector2.new(),
+		LeftEyeVisible = true,
+		RightEyePosition = Vector2.new(),
+		RightEyeVisible = true
 	}
 }
 ```
