@@ -1,4 +1,5 @@
 *.pdn
 *.psd
-site/
-/templates
+site
+template
+.vscode

@@ -1,4 +1,5 @@
 site_name: Hammer Game Documentation
+site_url: https://mammoth-games.github.io/hammer-docs/
 repo_url: https://github.com/mammoth-games/hammer
 extra_css:
   - stylesheets/extra.css
@@ -21,11 +22,16 @@ theme:
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.expand
 
 markdown_extensions:
     - pymdownx.highlight:
         linenums_style: pymdownx.inline
     - pymdownx.superfences
+    - pymdownx.details
     - pymdownx.inlinehilite
     - pymdownx.keys
+    - pymdownx.tabbed
     - admonition
